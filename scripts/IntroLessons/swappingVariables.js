@@ -1,4 +1,4 @@
-console.log ("You made it to the console!");
+console.log("You made it to the console!");
 
 console.log("");
 console.log("");
@@ -35,9 +35,10 @@ let person2 = {
 
 console.log(person1);
 console.log(person2);
-
 let swap = person1.last;
 person1.lastName = person2.lastName;
 person2.lastName = swap;
-console.log(person1);
-console.log(person2);
+console.log(person1.firstName);
+console.log(person1.lastName);
+console.log(person2.firstName);
+console.log(person2.lastName);
