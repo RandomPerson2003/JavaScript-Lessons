@@ -3,12 +3,11 @@
 let stop = false;
 
 function testNaN(number) {
-    console.log("stop");
     if (isNaN(number)) {
         stop = true;
         return "Type a number!"
     } else {
-        return "Input Validated"
+        return "Input Valid"
     }
 }
 
@@ -41,32 +40,24 @@ function checkboxes() {
 
 function main() {
 
-    let firstNumber, secondNuber, text
 
-    firstNumber = document.getElementById("textfield1").value;
+    let firstNumber, secondNumber, text;
 
-    document.getElementById("validityTest1").innerHTML = test alert(testNaN(firstNumber));
-    document.getElementById("validityTest1").innerHTML = test NaN(firstNuber);
 
-    secondNumber = document.getElementById("textfield2").value;
+    firstNumber = document.getElementById('textfield1').value;
+    document.getElementById('validityTest1').innerHTML = alert(testNaN(firstNumber));
+    document.getElementById('validityTest1').innerHTML = testNaN(firstNumber);
 
-    document.getElementById("validityTest2").innerHTML = test alert(testNaN(secondNumber));
-    document.getElementById("validityTest2").innerHTML = test NaN(secondNuber);
 
-    if (stop == true) {
-        document.getElementById("answer").innerHTML = "Restart the example, the width and height need to be a numbers."
-    } else {
-        console.log("The display geometry is", geometry(firstNumber, secondNumber));
-        document, getElementById('answer').innerHTML = "This display is" + geometry(firstNumber, secondNumber);
-
-}
-
+    secondNumber = document.getElementById('textfield2').value;
+    document.getElementById('validityTest2').innerHTML = alert(testNaN(secondNumber));
+    document.getElementById('validityTest2').innerHTML = testNaN(secondNumber);
 
     if (stop == true) {
-        document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
+        document.getElementById('answer').innerHTML = "Restart the example, the width and height need to both be numbers."
     } else {
         console.log("The display geometry is", geometry(firstNumber, secondNumber));
-        document.getElementById('answer').innerHTML = "This display is " + geometry(firstNumber, secondNumber);
+        document.getElementById('answer').innerHTML = "" + geometry(firstNumber, secondNumber);
     }
 
 }

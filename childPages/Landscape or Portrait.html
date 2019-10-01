@@ -15,7 +15,7 @@
   <title>JavaScript Lessons</title>
 </head>
 
-<body>
+<body style="color:rgb(45, 90, 90)">
   <header>
     <h1>Landscape or Portrait</h1>
   </header>
@@ -50,7 +50,7 @@
         <button type="button" onclick="main()">Submit</button>
         <br>
         <h3>The Answer is:
-          <a id="answer">What is the answer?</a>
+          <a id="answer"></a>
         </h3>
         <br><br><br>
 
@@ -60,27 +60,31 @@
         <fieldset>
           <legend>Case Study</legend>
           <div>
-            <ul>
-              <li>Width is greater than height, return landscape
-              <li>Width is less than height, return portrait
-              <li>Width is equal to height, return square
-            </ul>
-          </div>
-          <label>
-            <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1">Checkbox 1
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="CheckboxGroup2" nalue="checkbox2">Checkbox 2
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="CheckboxGroup3" nalue="checkbox3">Checkbox 3
-          </label>
-
-
-
-
+            <button type="button" onclick="checkboxes()">View answer(s)</button>
+            <br><br>
+            <label>
+              <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+              <a>Width is greater than Height?</a>
+              <br>
+              <a id="checkbox1_answer">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+              <a>Width is less than Height? </a>
+              <br>
+              <a id="checkbox2_answer">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+              <a>Width is equal to Height? </a>
+              <br>
+              <a id="checkbox3_answer">Answer?</a>
+              <br>
+            </label>
         </fieldset>
 
 
