@@ -7,7 +7,7 @@ function testNaN(number) {
         stop = true;
         return "Type a number!"
     } else {
-        return "Input Valid"
+        return " ~ Input Valid"
     }
 }
 

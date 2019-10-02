@@ -1,21 +1,38 @@
 console.log ("");
 
 
-function max (number1, number2) { 
+function main () { 
 
+  let number1,number2;
 
-  if (number1 > number2) return number1;
-  else if (number1 < number2) return number2;
-  else square = true;
-  console.log("The function didn't run properly");
+  if (number1 > number2) console.log("Number 1 is bigger!")
+  else if (number1 < number2) console.log("Number 2 is bigger!")
+  else if (number1 == number2) console.log("They are the same!")
+
+  number1 = document.getElementById('first').value;
+  number2 = document.getElementById('second').value;
 }
 
-let square = false;
+function valid() {
 
-let number = max ( );
-let number1, number2;
-number1 = document.getElementById('number1').value;
-number2 = document.getElementById('number2').value;
 
-if (square == true) console.log("The numbers are the same.");
-else console.log("The larger number is", number);
+  let firstNumber, secondNumber;
+
+
+  firstNumber = document.getElementById('textfield1').value;
+  document.getElementById('validityTest1').innerHTML = alert(testNaN(firstNumber));
+  document.getElementById('validityTest1').innerHTML = testNaN(firstNumber);
+
+
+  secondNumber = document.getElementById('textfield2').value;
+  document.getElementById('validityTest2').innerHTML = alert(testNaN(secondNumber));
+  document.getElementById('validityTest2').innerHTML = testNaN(secondNumber);
+
+  if (stop == true) {
+      document.getElementById('answer').innerHTML = "Restart the example, the width and height need to both be numbers."
+  } else {
+      console.log("The display geometry is", geometry(firstNumber, secondNumber));
+      document.getElementById('answer').innerHTML = "" + geometry(firstNumber, secondNumber);
+  }
+
+}
