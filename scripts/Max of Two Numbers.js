@@ -1,38 +1,49 @@
-console.log ("");
+let stop = false
+let square = false
 
+function testNaN(number1, number2) {
+  //console.log(stop);
+  if (isNaN(number1, number2)) {
+    stop = true;
+    return "Type a real number"
+  } else {
+    return "Input Validated"
+  }
+}
 
-function main () { 
+function main() {
 
-  let number1,number2;
+  let number1, number2;
+  let final;
 
-  if (number1 > number2) console.log("Number 1 is bigger!")
-  else if (number1 < number2) console.log("Number 2 is bigger!")
-  else if (number1 == number2) console.log("They are the same!")
+  if (number1 > number2) {
+    final = number1;
+  } else if (number1 < number2) {
+    final = number2;
+  } else if (number1 == number2) {
+    square = true;
+  }
 
   number1 = document.getElementById('first').value;
   number2 = document.getElementById('second').value;
+
+
+  firstNumber = document.getElementById('textfield1');
+  document.getElementById('validityTest1').innerHTML = alert(testNaN(number1));
+  document.getElementById('validityTest1').innerHTML = testNaN(number1);
+
+
+  secondNumber = document.getElementById('textfield2');
+  document.getElementById('validityTest2').innerHTML = alert(testNaN(number2));
+  document.getElementById('validityTest2').innerHTML = testNaN(number2);
+
 }
 
-function valid() {
-
-
-  let firstNumber, secondNumber;
-
-
-  firstNumber = document.getElementById('textfield1').value;
-  document.getElementById('validityTest1').innerHTML = alert(testNaN(firstNumber));
-  document.getElementById('validityTest1').innerHTML = testNaN(firstNumber);
-
-
-  secondNumber = document.getElementById('textfield2').value;
-  document.getElementById('validityTest2').innerHTML = alert(testNaN(secondNumber));
-  document.getElementById('validityTest2').innerHTML = testNaN(secondNumber);
-
-  if (stop == true) {
-      document.getElementById('answer').innerHTML = "Restart the example, the width and height need to both be numbers."
-  } else {
-      console.log("The display geometry is", geometry(firstNumber, secondNumber));
-      document.getElementById('answer').innerHTML = "" + geometry(firstNumber, secondNumber);
-  }
-
+if (square == true) {
+  console.log("They are the same!")
+}
+if (stop == true) {
+  console.log("Restart, they both need ot be numbers.")
+} else {
+  console.log("The bigger number is: " + final + "!")
 }
