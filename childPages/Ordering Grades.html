@@ -1,50 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
+<head>
+
+  <html lang="en" dir="ltr">
+
   <head>
 
-    <noscript><h1 styles ="color: red"><strong>JavaScript needs to be enebled in settings</strong></h1></noscript> <!-- Checks browser settings for JavaScript-->
+    <noscript>
+      <h1 style="color:red;">JavaScript needs to be enabled in Settings</h1>
+    </noscript>
 
     <meta charset="utf-8">
-    <meta name= "author" content ="Kyler Orsten">
-    <meta name="description" content="Intermediate JavaScript Lesons">
-    <meta name="keywords" content="JavaScript, Variables, Counting, Coding, Algorithms, Lessons, html">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Lessons</title>
+    <meta name="author" content="Mark Mercer">
+    <meta name="description" content="JavaScript Assignemnts, output to console">
+
+    <meta name="keywords" content="JavaScript, Console">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript lessons</title>
+
+
   </head>
-  <body>
-        <header><h1>Ordering Grades</h1></header>
-        <nav>
-        </nav>
 
-    <aside></aside>
-    <section>
+<body style="text-align: center">
+
+  <header>
+    <h1>Ordering Grades Assignment</h1>
+  </header>
+
+
+  <section>
+    <article>
+
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+
+
+        <p>&nbsp;</p>
+
+
+        <a><strong>Enter three grades below:</strong></a>
+
         <p>
-            <label for="textfield">Width: </label>
-            <input name="textfield1" type="text" id="textfield1">
-            <a id="validityTest1"></a>
-          </p>
-          <p>
-            <label for="textfield">Height: </label>
-            <input name="textfield2" type="text" id="textfield2">
-            <a id="validityTest2"></a>
-          </p>
-          <p>See the alert for validity test on numbers.</p>
-  
-          <br><br>
-          <button type="button" onclick="main()"; style="text-decoration-line:underline">Submit</button>
-          <br>
-          <h3>The Answer is:
-            <a id="answer"></a>
-          </h3><article>
+          <label for="textfield">Grade #1: </label>
+          <input name="textfield1" type="text" id="textfield1">
+          <a id="validityTest1">See the Alert</a>
+        </p>
 
-    <script src="../scripts/Ordering Grades.js"></script>
+        <p>
+          <label for="textfield2">Grade #2: </label>
+          <input name="textfield2" type="text" id="textfield2">
+          <a id="validityTest2">See the Alert</a>
+        </p>
 
-  </body>
+        <p>
+          <label for="textfield">Grade #3: </label>
+          <input name="textfield3" type="text" id="textfield3">
+          <a id="validityTest3">See the Alert</a>
+        </p>
+        <p>
+          <label for="textfield">Grade #4: </label>
+          <input name="textfield4" type="text" id="textfield4">
+          <a id="validityTest4">See the Alert</a>
+        </p>
+        <p>
+          <label for="textfield">Grade #5: </label>
+          <input name="textfield5" type="text" id="textfield5">
+          <a id="validityTest5">See the Alert</a>
+        </p>
 
-  <footer>
-    <blockquote cite="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F95%2F22%2Fb3%2F9522b30ac63fbb5f81e23a5f72731913.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F553028029243637447%2F&docid=xsc-gMo49RXGaM&tbnid=C0oWzvsSCUXu0M%3A&vet=10ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI..i&w=504&h=704&safe=strict&bih=625&biw=1366&q=cool%20quotes&ved=0ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI&iact=mrc&uact=8" !-- Date Accessed: 20190911 --!>
-      <p><strong>I am a boring person</strong><em> <a href=""></a></em></p>
-      <p>&copy Kyler Orsten, powered  by Awesomeness in Github.</p>
-    </blockquote>
-  </footer>
+        <br>
+        <button type="button" onclick="main()">Submit</button>
+        <br>
+        <h3><a id="answer">What is the answer?</a></h3>
+        <br><br>
+
+        <fieldset>
+          <div>
+            <button type="button" onclick="checkbox()" ; style="text-decoration-line:underline">View answer(s)</button>
+            <br><br>
+            <label>
+              <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+              <a>Is 20% > 60%?</a>
+              <br>
+              <a id="checkbox1_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+              <a>Is 90% > 9%? </a>
+              <br>
+              <a id="checkbox2_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+              <a>Is 88% > 88%?</a>
+              <br>
+              <a id="checkbox3_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+        </fieldset>
+
+    </article>
+  </section>
+
+  <script src="../scripts/Ordering Grades.js"></script>
+
+</body>
+
+<footer>
+  <blockquote
+    cite="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F95%2F22%2Fb3%2F9522b30ac63fbb5f81e23a5f72731913.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F553028029243637447%2F&docid=xsc-gMo49RXGaM&tbnid=C0oWzvsSCUXu0M%3A&vet=10ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI..i&w=504&h=704&safe=strict&bih=625&biw=1366&q=cool%20quotes&ved=0ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI&iact=mrc&uact=8"
+    !-- Date Accessed: 20190911 --!>
+    <p><strong>I am a boring person</strong><em> <a href=""></a></em></p>
+    <p>&copy Kyler Orsten, powered by Awesomeness in Github.</p>
+  </blockquote>
+</footer>
+
 </html>

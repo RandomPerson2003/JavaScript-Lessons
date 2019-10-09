@@ -5,7 +5,7 @@
 
   <noscript>
     <h1 styles="color: red"><strong>JavaScript needs to be enebled in settings</strong></h1>
-  </noscript> <!-- Checks browser settings for JavaScript-->
+  </noscript>
 
   <meta charset="utf-8">
   <meta name="author" content="Kyler Orsten">
@@ -17,23 +17,83 @@
 
 <body style="text-align: center">
   <header>
-    <h1 style="text-decoration-line:underline;text-decoration-style:double; text-decoration-color: indigo">Max of Two
-      Number Assignment</h1>
+    <h1 style="text-decoration-line:underline;text-decoration-style:double; text-decoration-color: indigo">Max of Two Numbers</h1>
   </header>
+  <nav>
+  </nav>
 
-  <h3>Input numbers below:</h3>
-  <p>
-    <label for="textfield1">Number 1 ~ </label>
-    <input name="first" type="text" id="first">
-    <a id="validityTest1"></a>
-  </p>
-  <p>
-    <label for="textfield2">Number 2 ~ </label>
-    <input name="second" type="text" id="second">
-    <a id="validityTest2"></a>
-  </p>
-  <button type="button" onclick="main ()" style="text-decoration-line:underline">Submit</button>
+  <aside></aside>
+  <section>
+    <article>
 
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+
+
+        <p>&nbsp;</p>
+
+        <p><strong>
+            Enter two numbers below:
+        </p></strong>
+        <br>
+        <p>
+          <label for="textfield">Number 1: </label>
+          <input name="textfield1" type="text" id="textfield1">
+          <a id="validityTest1"></a>
+        </p>
+        <p>
+          <label for="textfield">Number 2: </label>
+          <input name="textfield2" type="text" id="textfield2">
+          <a id="validityTest2"></a>
+        </p>
+        <p>See the alert for validity test on numbers.</p>
+
+        <br><br>
+        <button type="button" onclick="main()" ; style="text-decoration-line:underline">Submit</button>
+        <br>
+        <h3>The Answer is:
+          <a id="answer"></a>
+        </h3>
+        <br><br><br>
+
+
+        </h3>
+
+        <fieldset>
+          <div>
+            <button type="button" onclick="checkboxes()" ; style="text-decoration-line:underline">View
+              answer(s)</button>
+            <br><br>
+            <label>
+              <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+              <a>15 is bigger than 20?</a>
+              <br>
+              <a id="checkbox1_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+              <a>20 is the same as 15? </a>
+              <br>
+              <a id="checkbox2_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+              <a>45 is smaller than 19? </a>
+              <br>
+              <a id="checkbox3_answer" style="color:firebrick">Answer?</a>
+              <br>
+            </label>
+        </fieldset>
+
+
+    </article>
+  </section>
+
+
+  <br><br><br>
 
   <script src="../scripts/Max of Two Numbers.js"></script>
 
