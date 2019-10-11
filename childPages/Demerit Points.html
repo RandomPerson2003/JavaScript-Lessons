@@ -1,32 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <noscript><h1 styles ="color: red"><strong>JavaScript needs to be enebled in settings</strong></h1></noscript> <!-- Checks browser settings for JavaScript-->
+<head>
 
-    <meta charset="utf-8">
-    <meta name= "author" content ="Kyler Orsten">
-    <meta name="description" content="Intermediate JavaScript Lesons">
-    <meta name="keywords" content="JavaScript, Variables, Counting, Coding, Algorithms, Lessons, html">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Lessons</title>
-  </head>
-  <body>
-        <header><h1>Demerit Points</h1></header>
-        <nav>
-        </nav>
+  <noscript>
+    <h1 style="color:red;">JavaScript needs to be enabled in Settings</h1>
+  </noscript>
 
-    <aside></aside>
-    <section><article></article></section>
+  <meta charset="utf-8">
+  <meta name="author" content="Mark Mercer">
+  <meta name="description" content="JavaScript Assignemnts, output to console">
+  <meta name="keywords" content="JavaScript, Console">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="../scripts/template.js"></script>
+  <title>I'm Learning Javacript</title>
+</head>
 
-  </body>
+<body style="text-align: center">
+  <header>
+    <h1>Demerit Points</h1>
+  </header>
+  <nav></nav>
+  <aside></aside>
 
-  <footer>
-    <blockquote cite="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F95%2F22%2Fb3%2F9522b30ac63fbb5f81e23a5f72731913.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F553028029243637447%2F&docid=xsc-gMo49RXGaM&tbnid=C0oWzvsSCUXu0M%3A&vet=10ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI..i&w=504&h=704&safe=strict&bih=625&biw=1366&q=cool%20quotes&ved=0ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI&iact=mrc&uact=8" !-- Date Accessed: 20190911 --!>
-      <p><strong>I am a boring person</strong><em> <a href=""></a></em></p>
-      <p>&copy Kyler Orsten, powered  by Awesomeness in Github.</p>
-    </blockquote>
-  </footer>
-</html> 
+  <section>
+    <article>
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+        <p>&nbsp;</p>
+
+        <a><strong>Enter the values below:</strong></a>
+        <p>
+          <label for="textfield">Speed Limit: </label>
+          <input name="textfield1" type="text" id="textfield1">
+          <a id="validityTest1">See the Alert</a>
+          <br>
+          <a style="color:gray">Note: if nothing entered, speed limit will be <strong>70 km/h</strong></a>
+        </p>
+
+        <p>
+          <label for="textfield2">Speed driven: </label>
+          <input name="textfield2" type="text" id="textfield2">
+          <a id="validityTest2">See the Alert</a>
+        </p>
+
+        <br>
+        <button type="button" onclick="main()" ; style="text-decoration-line:underline">Submit</button>
+        <br>
+        <h3>
+          <a>Speed limit entered is </a><a id="speedLimit">70 km/h</a>
+          <br>
+          <a>Speed Entered Above is </a><a id="speed">...</a>
+          <br>
+          <a id="answer">for ___ Demerit Points</a>
+        </h3>
+        <br><br><br>
+
+        <fieldset>
+          <div>
+            <button type="button" onclick="checkboxes()" ; style="text-decoration-line:underline">Submit</button>
+            <br><br>
+            <label>
+              <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+              <a>Question: </a><a id="checkbox1_answer">True False Answer</a>
+            </label>
+            <br>
+
+            <label>
+              <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+              <a>Question: </a><a id="checkbox2_answer">True False Answer</a>
+            </label>
+            <br>
+
+            <label>
+              <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+              <a>Question: </a><a id="checkbox3_answer">True False Answer</a>
+            </label>
+        </fieldset>
+    </article>
+  </section>
+
+  <br><br><br>
+
+  <script src="../scripts/Demerit Points.js"></script>
+
+</body>
+
+<footer>
+  <blockquote
+    cite="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F95%2F22%2Fb3%2F9522b30ac63fbb5f81e23a5f72731913.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F553028029243637447%2F&docid=xsc-gMo49RXGaM&tbnid=C0oWzvsSCUXu0M%3A&vet=10ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI..i&w=504&h=704&safe=strict&bih=625&biw=1366&q=cool%20quotes&ved=0ahUKEwiG3JS5xcnkAhWNrJ4KHRmDDTQQMwiYASgiMCI&iact=mrc&uact=8"
+    !-- Date Accessed: 20190911 --!>
+    <p><strong>I am a boring person</strong><em> <a href=""></a></em></p>
+    <p>&copy Kyler Orsten, powered by Awesomeness in Github.</p>
+  </blockquote>
+</footer>
+
+</html>

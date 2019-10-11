@@ -9,7 +9,7 @@ function testNaN(number) {
     }
 }
 
-function orderingThree(first, second, third, fourth, fifth) {
+function orderingFive(first, second, third, fourth, fifth) {
 
     let memory1;
 
@@ -113,9 +113,9 @@ function main() {
     if (stop == true) {
         document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
     } else {
-        console.log("The smallest to largest order is ", orderingThree(firstNumber, secondNumber, fourthNumber, fifthNumber));
+        console.log("The smallest to largest order is ", orderingFive(firstNumber, secondNumber, fourthNumber, fifthNumber));
         document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + ", " + fourthNumber + ", " + fifthNumber + " in order from smallest to largets is ... \n" +
-            orderingThree(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber);
+            orderingFive(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber);
     }
 }
 
