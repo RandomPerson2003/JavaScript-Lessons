@@ -13,8 +13,7 @@ function orderingFive(first, second, third, fourth, fifth) {
 
     let memory1;
 
-
-    while (first > second || second > third || third > fourth || fourth > fifth)
+    while (first > second || second > third || third > fourth || fourth > fifth) {
         if (first > second) {
             memory1 = second;
             second = first;
@@ -35,13 +34,12 @@ function orderingFive(first, second, third, fourth, fifth) {
             fifth = fourth;
             fourth = memory1;
         }
-
-
+    }
     if (first <= second) {
         if (second <= third) {
             if (third <= fourth) {
                 if (fourth <= fifth) {
-                    return first + ", " + second + ", " + third+ ", " +fourth+ ", " + fifth;
+                    return first + ", " + second + ", " + third + ", " + fourth + ", " + fifth;
                 }
             }
         }
@@ -106,15 +104,11 @@ function main() {
     document.getElementById('validityTest5').innerHTML = testNaN(fifthNumber);
 
 
-
-    console.log("In memory, \n the first number is " + firstNumber + " and \n the second number is " + secondNumber + " and \n the third number is " + thirdNumber + " and \n the fourth number is " + fourthNumber + " and \n the fifth number is " + fifthNumber);
-
-
     if (stop == true) {
-        document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
+        document.getElementById('answer').innerHTML = "Restart the example, both inputs need to be numbers."
     } else {
-        console.log("The smallest to largest order is ", orderingFive(firstNumber, secondNumber, fourthNumber, fifthNumber));
-        document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + ", " + fourthNumber + ", " + fifthNumber + " in order from smallest to largets is ... \n" +
+        console.log("The numbers arranged from smallest to largest is: ", orderingFive(firstNumber, secondNumber, fourthNumber, fifthNumber));
+        document.getElementById('answer').innerHTML = "The numbers " + firstNumber + ", " + secondNumber + ", " + thirdNumber + ", " + fourthNumber + ", " + fifthNumber + " in order from smallest to largets is: \n" +
             orderingFive(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber);
     }
 }
@@ -138,4 +132,3 @@ function main() {
 //if(third > second){
 //three = third
 //}else (three = )
-//}else (three = second)
