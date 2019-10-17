@@ -37,15 +37,25 @@ function main() {
 
     if (firstNumber <= 1159) {
         morning = true
+        stop = false;
     }
     if (firstNumber >= 1200) {
         afternoon = true
+        stop = false;
+    }
+    if (firstNumber >= 2461) {
+        stop = true
+    }
+    if (firstNumber <= 99){
+        stop = true
+
     }
 
 
 
     if (stop == true){
-        console.log("Please retry, the input needs to be a number above zero.")
+        console.log("Please retry, the input needs to be a time of day.")
+        document.getElementById('answer').innerHTML = ("Please input a real time.");
     } else {
         stuff(afternoon, morning)
         document.getElementById('answer').innerHTML = response;
